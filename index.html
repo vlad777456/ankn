@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <link rel="stylesheet" href="style.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Про мене</title>
@@ -30,10 +28,15 @@
         h1 {
             color: #4682b4; /* Синій колір заголовку */
         }
-        img {
-            border-radius: 50%;
-            max-width: 150px;
+        .images {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 20px;
+        }
+        .images img {
+            border-radius: 10px;
+            max-width: 45%;
         }
         p {
             font-size: 18px;
@@ -53,14 +56,12 @@
 </head>
 <body>
     <div class="container">
-        <img src="moya_fotografiya.jpg" alt="Моє фото">
-          <img src="mf.jpg" alt="Моє фото">
-        
-       
-        <p>Привіт! Мене звати Влад. Я навчаюсь і живу в рівному . Я захоплююсь різними видами спорту і книгами .
-Якщо зміг тебе зацікавити то чекаю твого повідомлення в телеграмі </p>
-       
-       
+        <div class="images">
+            <img src="horizontal_photo.jpg" alt="Горизонтальне фото">
+            <img src="vertical_photo.jpg" alt="Вертикальне фото">
+        </div>
+        <h1>Ваше Ім'я</h1>
+        <p>Привіт! Мене звати Влад, і я навчаюсь і живу в Рівному. Я захоплююсь різними видами спорту і книгами. Якщо зміг тебе зацікавити, то чекаю твого повідомлення в телеграмі.</p>
     </div>
 </body>
 </html>
